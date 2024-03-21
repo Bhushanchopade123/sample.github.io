@@ -1,14 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PDF Open</title>
+<title>PDF Download</title>
 <script>
 window.onload = function() {
   var link = document.createElement('a');
   link.href = 'https://raw.githubusercontent.com/Bhushanchopade123/sample.github.io/main/BHUSHAN%20SUNIL%20CHOPADE%20%24.pdf'; // Replace 'path_to_your_pdf_file.pdf' with the actual path to your PDF file
-  link.target = '_blank'; // Open the PDF in a new tab/window
+  link.download = 'resume.pdf'; // Change 'downloaded_file.pdf' to the desired name of the downloaded file
   document.body.appendChild(link);
   link.click();
 };
